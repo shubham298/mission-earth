@@ -1,0 +1,20 @@
+ .content{
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 35%;
+  padding: 20px;
+  text-align: center;
+font-size: 2em;
+margin-bottom: 9%;
+font-family: sans-serif;
+margin-left: 32%;
+}
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}

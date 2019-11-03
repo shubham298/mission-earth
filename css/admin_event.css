@@ -1,0 +1,44 @@
+* {box-sizing: border-box}
+body{
+    background-color: white;
+}
+.hea > h1{
+    color: white;
+    margin-top:20px;
+}
+.mydiv{
+    background-color: white;
+    text-align:center;
+    width: 30%;  
+    margin:2px auto;   
+     border-radius:10px; 
+     color: white;
+}
+ input {
+    width: 60%;
+    padding: 16px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    border-radius: 11px;
+    border: 1px solid black;
+}
+input:focus {
+  background-color: #ddd;
+  outline: none;
+}
+label{
+	font-size: 1.3em;
+color: black;
+}
+.foo{
+	/*border-style: solid;
+	border-radius: 15px
+	margin-right:50%;*/
+	margin-left: 19%;
+
+}
+legend{
+	color: white;
+	font-size: 1.5em;
+}
