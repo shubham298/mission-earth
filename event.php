@@ -24,20 +24,29 @@ if(!isset($_SESSION['admin'])){
 <h1 align="center">EVENTS</h1>
    <h1><?php echo  $_SESSION['admin']?></h1>
 </div>
-<form action="event_backend.php" class="foo" method="post"> 
+<form action="event_backend.php" class="foo" method="post" enctype="multipart/form-data"> 
   <fieldset style="border-color: white;margin-right: 26%;">
     <legend align="center">Event Registration</legend>
+
   <label>Event name:</label>
   <input type="text" name="event_name"><br>
+
   <label>Event date:&nbsp;&nbsp;</label>
   <input type="date" name="event_date"><br>
+
  <label>Description:</label>
- <textarea type="text" name="desc" rows="10" cols="74" style="border-radius: 4px;">
-</textarea>
+  <textarea type="text" name="desc" rows="10" cols="74" style="border-radius: 4px;">
+  </textarea>
+
+  <br><label> Event Image:</label>
+  <input style="border:none;" type="file" name="event_image">
+
  <br><label> Event Head:</label>
   <input type="text" name="event_head">
+
   <br><label>Phone-no:&nbsp;&nbsp;&nbsp;&nbsp;</label>
   <input type="tel" name="head_phno">
+  
   <input type="submit" value="Submit">
   </fieldset>
 </form>

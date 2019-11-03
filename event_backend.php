@@ -15,7 +15,7 @@ $desc = $_POST['desc'];
 $event_head = $_POST['event_head'];  
 $head_phno = $_POST['head_phno'];  
 
-
+$image = $_FILES['event_image']['name'];
 
 
 $admin = $_SESSION['admin'];
@@ -23,11 +23,17 @@ $admin = $_SESSION['admin'];
     $rr = mysqli_query($con, $sql);
 $res = mysqli_fetch_array($rr);
         $idd=$res['admin_id'];
-//        echo $idd;
-        
-       $qy = "INSERT INTO `events` (`event_id`, `event_name`, `event_date`, `event_desc`, `event_org`, `org_phn`, `admin_id`) VALUES (NULL, '$name', '$date', '$desc', '$event_head', '$head_phno', '$idd')";
+$target = "images/".basename($image);
+       $qy = "INSERT INTO `events` (`event_id`, `event_name`, `event_date`, `event_desc`, `event_org`, `org_phn`,`event_image`, `admin_id`) VALUES (NULL, '$name', '$date', '$desc', '$event_head', '$head_phno','$image', '$idd')";
     $result = mysqli_query($con, $qy); 
 
+if (move_uploaded_file($_FILES['event_image']['tmp_name'], $target)) {
+      $msg = "Image uploaded successfully";
+    }else{
+      $msg = "Failed to upload image";
+      echo "<script>alert('$msg');
+       window.location.replace(\"event.php\");</script>";
+    }
    if($result){
   $message = "event is added succesfully ";
        echo "<script>alert('$message');

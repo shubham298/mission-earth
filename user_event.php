@@ -38,9 +38,10 @@ if(!isset($_SESSION['user'])){
         $query = mysqli_query($con,$q);  
         
         while($res = mysqli_fetch_array($query)){
-        ?>
-               <div class="card card-1">
-                <img src="./images/planting.jpg" alt="Avatar" style="width:100%">
+      
+              echo "<div class='card card-1'>";
+               echo "<img src='images/".$res['event_image']."' >";
+                 ?>
                 <h3 align="center"><?php echo $res['event_name']?></h3>
         <div class="">
             <p><?php echo $res['event_desc'] ?></p>
