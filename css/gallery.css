@@ -1,0 +1,62 @@
+
+*{
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+
+body{
+ font-size: 16px;
+ font-family: monospace, "Helvetica Neue", Helvetica, Verdana, sans-serif;
+ background-color: white;
+ text-align: center;
+ color: #666;
+}
+#pagewrap{
+ max-width: 960px;
+ width: 100%;
+ margin: 0 auto;
+}
+
+.gallery{
+ width: 100%;
+ margin: 0 auto;
+
+
+}
+
+.image{
+ width: 100%;
+ border: 1.5px solid #ccc;
+ background-color: #ecf0f1;
+}
+
+.image img{
+ max-width: 100%;
+ margin: 0 auto;
+}
+
+.image:hover{
+ box-shadow: 0 1px 30px rgba(0,0,0,.3);
+ transform: scale(1.10);
+ border: none;
+ transition: box-shadow 0.2s ease, transform 0.2s ease;
+ z-index: 1;
+}
+
+.image p{
+ padding: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.grid-item {
+
+  padding: 10px;
+  font-size: 25px;
+  text-align: center;
+}

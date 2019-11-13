@@ -7,6 +7,7 @@
   margin: 1rem;
   position: relative;
   width: 380px;
+      border: 5px black solid;
 }
 .card-1 {
   box-shadow: 0 1px 3px rgba(0,1,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
@@ -17,7 +18,7 @@
   box-shadow: 0 14px 28px rgba(0,0,0,0.25);
 }
 .container {
-  padding: 2px 16px;
+  padding: 31px 81px;
 }
 .card p{
   height: 72px;

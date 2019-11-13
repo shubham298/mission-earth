@@ -13,9 +13,9 @@ form {}
 <body>
 <div id="nav">
 	<ul>
-		  <li><a href="start.php">first</a></li>
-		  <li><a href="user_login.php">login</a></li>
-		  <li style=""><a href="#">signin</a></li>
+	<li><a href="login.php">admin_login</a></li>
+      <li><a href="user_login.php">user_login</a></li>
+      <li style=""><a href="signin.php">user_signup</a></li>
 	</ul>
 </div>
  <div class="imgcontainer">

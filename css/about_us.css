@@ -1,0 +1,22 @@
+body{
+    background:url("../images/leafbg.jpg")
+    no-repeat center center fixed;
+    background-size: cover;
+    }
+      .p{
+        width:600px;
+        padding: 60px;
+        font-size:24px;
+        color:white;
+        text-align:justify;
+        font-family:sans-serif;
+            background-color: rgba(0,0,0,0.9);
+        margin:42px auto;
+        position: relative;
+        text-transform: lowercase;
+      }
+      
+      .p > h2{
+        text-align: center;
+        text-transform: capitalize;
+      }

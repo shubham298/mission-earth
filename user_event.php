@@ -12,7 +12,9 @@ if(!isset($_SESSION['user'])){
     <link rel="stylesheet" href="css/nav.css">
         <link rel="stylesheet" href="css/user_event.css">
         <style type="text/css">
- 
+ .card img{
+width:100%;
+ }
         </style>
 </head>
 <body>
@@ -24,7 +26,7 @@ if(!isset($_SESSION['user'])){
     <li><a href="gallery.php">Gallery</a></li>
     <li><a href="suggestion.php">Suggestion</a></li>
     <li><a href="contact_us.php">Contact us</a></li>
-    <li><a href="review.php">Review</a></li>
+<!--     <li><a href="review.php">Review</a></li> -->
     <li><a href="logout.php">logout</a></li>
   </ul>
 </div>
@@ -42,14 +44,14 @@ if(!isset($_SESSION['user'])){
               echo "<div class='card card-1'>";
                echo "<img src='images/".$res['event_image']."' >";
                  ?>
-                <h3 align="center"><?php echo $res['event_name']?></h3>
+                <h3 align="center" style="background-color: #689f38;color: white;font-weight: 900;"><?php echo $res['event_name']?></h3>
         <div class="">
             <p><?php echo $res['event_desc'] ?></p>
         </div>
             
             <hr>
-            <div class="container">
-            Event Head:<?php echo $res['event_org'] ?><br>
+            <div class="container" align="center" style=" border-bottom: 6px solid #689f38;">
+            Event Head:<br><span style=""><?php echo $res['event_org'] ?></span><br>
             
             Date : <?php echo $res['event_date'] ?><br>
             

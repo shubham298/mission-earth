@@ -3,33 +3,29 @@
 <head>
     <title>About Us</title>
         <link rel="stylesheet" href="css/nav.css">
-    <style>
-    body{
-    background:url("./images/for.jpg")
-    no-repeat center center fixed;
-    background-size: cover;
-    }
-      .p{
-        width:600px;
-        padding: 60px;
-        font-size:24px;
-        color:white;
-        text-align:justify;
-        font-family:sans-serif;
-        background-color: rgba(0,0,0,0.6);
-        margin:42px auto;
-        position: relative;
-      }
-      
-      .p > h2{
-        text-align: center;
-      }
-
-    </style>
+         <link rel="stylesheet" href="css/about_us.css">
+<style type="text/css">
+  a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.9em;
+  }
+</style>
 </head>
 
 <body>
-
+   <div id="nav" class="mydiv">
+    <ul>
+      <li><a href="user_dash.php">Home</a></li>
+      <li><a href="about_us.php">About&nbsp;us</a></li>
+      <li><a href="user_event.php">Events</a></li>
+      <li><a href="gallery.php">Gallery</a></li>
+      <li><a href="suggestion.php">Suggestion</a></li>
+      <li><a href="contact_us.php">Contact us</a></li>
+  <!--     <li><a href="review.php">Review</a></li> -->
+      <li><a href="logout.php">logout</a></li>
+    </ul>
+</div>
 <div class="p">
     <h2 >About Us</h2>
      We define community health broadly to include organizations that provide services to maintain, protect, and improve the status of polluted mother earth.The main moto is to save our earth from pollutions and exploitations done on earth.So we step-ahead to provide the platform where the intrested people can volunteerly come and join our community.So that we can contribute a little to save our "MOTHER EARTH".It does not include policy work or legal reform.
